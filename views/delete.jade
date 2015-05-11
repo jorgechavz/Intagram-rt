@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.wrapper
+    h1 Lista de Suscripciones en Instagram
+    form(id="new-sub")
+      input(type="text" placeholder="Agregar nueva")
+      input(type="submit" value="+")
+    ul
+      each val in subs
+        li
+          b
+            span= val.id
+          span= val.object_id
+    

@@ -1,0 +1,127 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+.wrapper{
+  width: 80%;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+#new-sub{
+  margin-bottom: 20px;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: #00B7FF;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+#imgContent{
+  font-size: 0px;
+  background: black;
+}
+*{
+  box-sizing: border-box;
+}
+#imgContent .img-item{
+  border-radius: 3px;
+  width: 25%;
+  vertical-align: top;
+  height: 300px;
+  overflow: hidden;
+  background-color: #373737;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: inline-flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  flex-direction: row;
+}
+.the-tweet{
+  position:relative;
+}
+.user-data{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 3px;
+}
+.user-data img{
+  margin-right: 5px;
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.user-data span{
+  line-height: 50px;
+}
+.tweet-wrap{
+  border: 1px solid #CACACA;
+}
+#imgContent .img-item .tweets{
+  padding: 0px 15px;
+}
+.stripe{
+  background-color: rgba(0,0,0,0.86);
+  padding: 20px 15px !important;
+}
+#imgContent .img-item:hover{
+  background-color: rgba(#4776A0,0.7);
+}
+
+#imgContent .img-item img{
+  width: 100%;
+}
+.tweet {
+  color: white;
+}
+.tweet_link {
+  color: pink;
+}
+.tweet_user {
+  color: whitesmoke;
+}
+.hashtag{
+  color: #FB6E95;
+}
+#menu{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  margin: 10px;
+  z-index: 1000;
+  opacity: 0.7;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+#menu:hover{
+  opacity: 1;
+}
+#menu ul li{
+  list-style:none;
+  display: inline-block
+}
+#menu ul li a{
+  font-size: 60px;
+  color: #E40443;
+}
+#menu ul li .audio-enabled{
+  color: red;
+}
+
+@media (max-width: 500px){
+  #imgContent .img-item{
+    width: 100%;
+    height: auto;
+    padding: 25px 15px;
+  }
+}

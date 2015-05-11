@@ -1,0 +1,21 @@
+
+//SEE SUBSCRIPTIONS
+// https://api.instagram.com/v1/subscriptions?client_secret=849e7e80ae9d47fbb15cfd67d18a60c0&client_id=a793d21536e7462b965ba1d096b14d19
+
+//DELETE ALL
+// curl -X DELETE 'https://api.instagram.com/v1/subscriptions?client_secret=849e7e80ae9d47fbb15cfd67d18a60c0&object=tag&client_id=a793d21536e7462b965ba1d096b14d19'
+
+//DELETE ONE (CHANGE ID)
+//curl -X DELETE 'https://api.instagram.com/v1/subscriptions?client_secret=849e7e80ae9d47fbb15cfd67d18a60c0&id=1&client_id=a793d21536e7462b965ba1d096b14d19'
+
+
+//GET ACCESS TOKEN
+// curl -F 'client_id=f09ab466bbf345acac3f87a92f6bc9b2' \
+//    -F 'client_secret=6c185297c2234d8680daf5a9beff5032' \
+//    -F 'grant_type=authorization_code' \
+//    -F 'redirect_uri=http://localhost:5000' \
+//    -F 'code=dcd88205ac374b8b87105122b17e6c52' \
+//    https://api.instagram.com/oauth/access_token
+
+
+// Instagram.media.unsubscribe({ id: 17456053 });

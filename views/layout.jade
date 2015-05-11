@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/bower_components/animate.css/animate.css")
+    script(src="/socket.io/socket.io.js")
+    script(src="/bower_components/jquery/dist/jquery.js")
+    script(src="/bower_components/jquery.tweet-parser/dev/jquery.tweetParser.js")
+    script(src="/javascripts/main.js")
+    link(rel="stylesheet", href="/bower_components/font-awesome/css/font-awesome.css")
+    link(rel="icon" type="image/png" href="/images/favicon.ico")
+  body
+    block content
